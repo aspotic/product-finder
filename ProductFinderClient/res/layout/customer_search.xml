@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|top"
+         android:id="@+id/searchLayout"
+    android:orientation="vertical" >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_margin="@dimen/descmargin"
+         android:text="@string/search"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/searchTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+         android:selectAllOnFocus="true"
+        android:layout_marginBottom="@dimen/descmargin2"
+        android:layout_marginLeft="@dimen/descmargin"
+        android:layout_marginRight="@dimen/descmargin"
+        android:layout_marginTop="@dimen/descmargin2"
+        android:text="@string/searchterm" >
+            <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/advancedSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/descmargin2"
+        android:layout_marginLeft="@dimen/descmargin"
+        android:layout_marginRight="@dimen/descmargin"
+        android:layout_marginTop="@dimen/descmargin2"
+        android:text="@string/advancedsearch" />
+    
+    <Spinner
+        android:id="@+id/deptSpinner"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/descmargin2"
+        android:layout_marginLeft="@dimen/descmargin"
+        android:layout_marginRight="@dimen/descmargin"
+        android:layout_marginTop="@dimen/descmargin2"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/brandSpinner"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/descmargin2"
+        android:layout_marginLeft="@dimen/descmargin"
+        android:layout_marginRight="@dimen/descmargin"
+        android:layout_marginTop="@dimen/descmargin2"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/highPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/descmargin2"
+        android:layout_marginLeft="@dimen/descmargin"
+        android:layout_marginRight="@dimen/descmargin"
+        android:layout_marginTop="@dimen/descmargin2"
+        android:text="@string/highprice" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/descmargin2"
+        android:layout_marginLeft="@dimen/descmargin"
+        android:layout_marginRight="@dimen/descmargin"
+        android:layout_marginTop="@dimen/descmargin2"
+        android:text="@string/search" />
+
+</LinearLayout>

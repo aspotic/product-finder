@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="false">
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+		<property name="department" direction="asc"/>
+		<property name="brand" direction="asc"/>
+        <property name="price" direction="asc"/>
+	</datastore-index>
+  
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+		<property name="department" direction="asc"/>
+        <property name="price" direction="asc"/>
+	</datastore-index>
+  
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+		<property name="department" direction="asc"/>
+		<property name="brand" direction="asc"/>
+	</datastore-index>
+  
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+		<property name="brand" direction="asc"/>
+        <property name="price" direction="asc"/>
+	</datastore-index>
+  
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+		<property name="department" direction="asc"/>
+	</datastore-index>
+  
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+		<property name="brand" direction="asc"/>
+	</datastore-index>
+  
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+        <property name="price" direction="asc"/>
+	</datastore-index>
+  
+	<datastore-index kind="Item" ancestor="false" source="manual">
+		<property name="store" direction="asc"/>
+        <property name="Name" direction="asc"/>
+	</datastore-index>
+
+</datastore-indexes>

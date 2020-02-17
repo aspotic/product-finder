@@ -1,0 +1,119 @@
+<!-- 
+AccessBrand PARAMETERS
+ * op createBrand:op,storeID, name
+ * op modifyBrand:op, storeID, oldName, newName, newDescription
+ * op removeBrand:op, storeID, name
+ * op getBrands:op, storeID
+ 
+AccessDepartment PARAMETERS
+ * op createDepartment:op,storeID, name
+ * op modifyDepartment:op, storeID, oldName, newName, newDescription
+ * op removeDepartment:op, storeID, name
+ * op getDepartments:op, storeID
+ 
+ -->
+ 
+<center>
+	<table width="100%" border="1" align="center">
+		<tr align="center">
+			<td>
+				Create Store
+			</td>
+			<td>
+				Access Brand
+			</td>
+			<td>
+				Access Department
+			</td>
+			<td>
+				Access Item
+			</td>
+		</tr>
+		<tr align="center">
+			<td rowspan="3" valign="top">
+				<form method="post" action="http://cmpt436project.appspot.com/CreateStore">
+				    <input type="submit" name="op" value="Create a new Store"/> <br />
+				</form>
+			</td>
+			<td>
+				<form method="post" action="http://cmpt436project.appspot.com/AccessBrand">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="name" value="name"/> <br />
+				    <input type="text" name="description" value="description"/> <br />
+				    <input type="submit" name="op" value="createBrand"/> <br />
+				</form>
+				<br />
+				<br />
+			</td>
+			<td>
+				<form method="post" action="http://cmpt436project.appspot.com/AccessDepartment">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="name" value="name"/> <br />
+				    <input type="text" name="description" value="description"/> <br />
+				    <input type="submit" name="op" value="createDepartment"/> <br />
+				</form>
+				<br />
+				<br />
+			</td>
+			<td>
+				<form method="post" action="http://cmpt436project.appspot.com/AccessItem">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="name" value="name"/> <br />
+				    <input type="submit" name="op" value="removeItem"/> <br />
+				</form>
+				<br />
+				<br />
+			</td>
+		</tr>
+		<tr align="center">
+			<td>
+				<form method="post" action="http://cmpt436project.appspot.com/AccessBrand">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="oldName" value="oldName"/> <br />
+				    <input type="text" name="newName" value="newName"/> <br />
+				    <input type="text" name="newDescription" value="newDescription"/> <br />
+				    <input type="submit" name="op" value="modifyBrand"/> <br />
+				</form>
+				<br />
+				<br />
+			</td>
+			<td>
+				<form method="post" action="http://cmpt436project.appspot.com/AccessDepartment">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="oldName" value="oldName"/> <br />
+				    <input type="text" name="newName" value="newName"/> <br />
+				    <input type="text" name="newDescription" value="newDescription"/> <br />
+				    <input type="submit" name="op" value="modifyDepartment"/> <br />
+				</form>
+				<br />
+				<br />
+			</td>
+			<td rowspan="2" valign="top">
+				<form method="get" action="http://cmpt436project.appspot.com/AccessItem">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="Name" value="Name"/> <br />
+				    <input type="text" name="department" value="department"/> <br />
+				    <input type="text" name="brand" value="brand"/> <br />
+				    <input type="text" name="MaxPrice" value="MaxPrice"/> <br />
+				    <input type="hidden" name="returnType" value="html"/>
+				    <input type="submit" name="op" value="getItems"/> <br />
+				</form>
+			</td>
+		</tr>
+		<tr align="center">
+			<td><form method="post" action="http://cmpt436project.appspot.com/AccessBrand">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="name" value="name"/> <br />
+				    <input type="submit" name="op" value="removeBrand"/> <br />
+				</form>
+			</td>
+			<td>
+				<form method="post" action="http://cmpt436project.appspot.com/AccessDepartment">
+				    <input type="text" name="storeID" value="storeID"/> <br />
+				    <input type="text" name="name" value="name"/> <br />
+				    <input type="submit" name="op" value="removeDepartment"/> <br />
+				</form>
+			</td>
+		</tr>
+	</table>
+</center>

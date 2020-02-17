@@ -1,0 +1,107 @@
+<!-- 
+AccessBrand PARAMETERS
+ * op createBrand:op,storeID, name
+ * op modifyBrand:op, storeID, oldName, newName, newDescription
+ * op removeBrand:op, storeID, name
+ * op getBrands:op, storeID
+ 
+AccessDepartment PARAMETERS
+ * op createDepartment:op,storeID, name
+ * op modifyDepartment:op, storeID, oldName, newName, newDescription
+ * op removeDepartment:op, storeID, name
+ * op getDepartments:op, storeID
+ 
+ -->
+ 
+<center>
+	<form method="post" action="http://localhost:8888/CreateStore">
+	    <input type="submit" name="op" value="Create a new Store"/> <br />
+	</form>
+	<br />
+	----------------------Access Brand
+	<br />
+	
+	
+	<form method="post" action="http://localhost:8888/AccessBrand">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="name" value="name"/> <br />
+	    <input type="text" name="description" value="description"/> <br />
+	    <input type="submit" name="op" value="createBrand"/> <br />
+	</form>
+	<br />
+	<br />
+	
+	
+	<form method="post" action="http://localhost:8888/AccessBrand">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="oldName" value="oldName"/> <br />
+	    <input type="text" name="newName" value="newName"/> <br />
+	    <input type="text" name="newDescription" value="newDescription"/> <br />
+	    <input type="submit" name="op" value="modifyBrand"/> <br />
+	</form>
+	<br />
+	<br />
+	
+	
+	<form method="post" action="http://localhost:8888/AccessBrand">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="name" value="name"/> <br />
+	    <input type="submit" name="op" value="removeBrand"/> <br />
+	</form>
+	<br />
+	----------------------Access Department
+	<br />
+	
+	
+	<form method="post" action="http://localhost:8888/AccessDepartment">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="name" value="name"/> <br />
+	    <input type="text" name="description" value="description"/> <br />
+	    <input type="submit" name="op" value="createDepartment"/> <br />
+	</form>
+	<br />
+	<br />
+	
+	
+	<form method="post" action="http://localhost:8888/AccessDepartment">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="oldName" value="oldName"/> <br />
+	    <input type="text" name="newName" value="newName"/> <br />
+	    <input type="text" name="newDescription" value="newDescription"/> <br />
+	    <input type="submit" name="op" value="modifyDepartment"/> <br />
+	</form>
+	<br />
+	<br />
+	
+	
+	<form method="post" action="http://localhost:8888/AccessDepartment">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="name" value="name"/> <br />
+	    <input type="submit" name="op" value="removeDepartment"/> <br />
+	</form>
+	<br />
+	----------------------Access Item
+	<br />
+	
+	
+	<form method="post" action="http://localhost:8888/AccessItem">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="name" value="name"/> <br />
+	    <input type="submit" name="op" value="removeItem"/> <br />
+	</form>
+	<br />
+	<br />
+	
+	
+	<form method="get" action="http://localhost:8888/AccessItem">
+	    <input type="text" name="storeID" value="storeID"/> <br />
+	    <input type="text" name="Name" value="Name"/> <br />
+	    <input type="text" name="department" value="department"/> <br />
+	    <input type="text" name="brand" value="brand"/> <br />
+	    <input type="text" name="MaxPrice" value="MaxPrice"/> <br />
+	    <input type="hidden" name="returnType" value="html"/>
+	    <input type="submit" name="op" value="getItems"/> <br />
+	</form>
+	<br />
+	<br />
+</center>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/formTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/descmargin2"
+        android:text="@string/createproduct"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/prodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:text="@string/name" />
+
+    <Spinner
+        android:id="@+id/prodDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:text="@string/department" />
+
+    <Spinner
+        android:id="@+id/prodBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:text="@string/brand" />
+
+    <EditText
+        android:id="@+id/prodSerial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:inputType="number"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:text="@string/serialnumber" />
+
+    <EditText
+        android:id="@+id/prodDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:text="@string/description" />
+
+    <EditText
+        android:id="@+id/prodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:text="@string/price" />
+
+    <EditText
+        android:id="@+id/prodIsle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:inputType="number"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:text="@string/islenumber" />
+
+    <EditText
+        android:id="@+id/prodShelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/descmargin2"
+        android:layout_marginRight="@dimen/descmargin2"
+        android:inputType="number"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:text="@string/shelfnum" />
+
+    <Button
+        android:id="@+id/createProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/descmargin2"
+        android:text="@string/createproduct" />
+
+</LinearLayout>
